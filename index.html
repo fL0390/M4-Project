@@ -3,9 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/index.css">
     <title>Saddam Hussein</title>
 </head>
 <body>
+    <header>
+
+    </header>
+    <div class="login-container">
+        <form id="loginForm" action="/main.html">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <div class="terms">
+                <input type="checkbox" id="tos" name="tos" disabled>
+                <label for="tos">I agree to the 
+                    <button type="button" id="showTos">Terms of Service</button>.
+                </label>
+            </div>
+            <button type="submit" id="submitButton" disabled>Login</button>
+        </form>
+    
+        <!-- Modal for Terms of Service -->
+        <div class="modal" id="tosModal">
+            <div class="modal-content">
+                <h3>Terms of Service</h3>
+                <div id="tosContent" style="max-height: 300px; overflow-y: auto; text-align: left;">
+                    <p>
+                    <!-- Replace this content with your actual Terms of Service -->
+                    In an ordinary e-commerce sale, the transaction is complete once the consumer finishes the online purchase and pays for the product. For firearms sales, of course, the transaction cannot be completed unless the purchaser meets specific federal, state, and local requirements for taking delivery of firearms, in particular completing the ATF Form 4473 and passing a NICS check. Most online sellers of firearms follow a simple model where the sale is made on the seller’s website, and the firearm is shipped to a Federal Firearms License (FFL) holder located near the buyer. The buyer then picks up the firearm from the FFL holder, usually paying a small transfer fee to the FFL holder.
+
+Following this model for online sales of firearms addresses concerns with federal firearms laws about interstate shipment of firearms, but what about the specific terms and conditions of the sale that govern the relationship between the buyer and the seller? For example, if the buyer cannot legally take delivery of the firearm, the terms and conditions to which the buyer agreed should spell out what happens in such case, specifying that the sale was not completed, how the firearm will be returned to the seller, how the buyer’s money will be returned, who will be responsible for the costs of returning the firearm, and the like.  Many online sellers make sales without fully-vetted terms and conditions or, in some cases, with no terms and conditions at all, leaving themselves exposed to significant legal risk if a sale doesn’t go through. 
+
+Specifying the terms of conditional sales of firearms can also help sellers anticipate issues with state or local laws. A prime example is the online sale of a firearm to a Washington state consumer. A new Washington state law went into effect in December, 2014, requiring background checks for any sale of a firearm, including online sales. However, the same law also defines a “sale” as “the actual approval of the delivery of the firearm in consideration of payment or promise of payment”.  An online gun seller therefore can specify in its terms and conditions the triggering event (i.e., passing a background check) so that it has not completed a “sale” until it has complied with Washington’s new law.
+
+A conditional sale model may not be necessary for all online transactions.  If a product sold online, for instance, does not comprise the frame or receiver of a firearm, then the product does not meet the federal definition, and most state definitions, of a “firearm”. The shipment of such a product to an FFL, with the transaction contingent on the completion of a background check and other requirements, is not needed, and a seller can therefore engage in direct sales in this case.
+
+Because a buyer may attempt to purchase a product classified as a “firearm” contemporaneously with the purchase of non-firearm products or accessories, a seller may need to consider whether it will treat the order as a single conditional transaction or multiple transactions. And, the seller should anticipate in its terms of sale whether it will ship the firearm and non-firearm products together to an FFL or ship the products separately, with the firearm product being sent to the FFL and the non-firearm products being sent directly to the buyer. Further, in such a case, if the conditional firearm sale is not completed, the seller’s terms should anticipate allowing return of the firearm but deeming the sale of the non-firearm items complete upon payment on the website. Another relevant consideration in this scenario is the federal prohibition on the shipment of firearms and ammunition together in a single package.
+
+Online sellers should also include general terms of sales that will protect the seller in case other legal issues arise. Sellers can set terms of warranty, product returns, risk of loss in shipping, and allocation of responsibility for the payment of shipping costs, taxes, and any FFL fees, all of which apply to sales of any product. Take into account that all the guns at sale in this website are completely fake and don't have the power to provoke harmness to any part of the body besides the eyeballs
+
+
+Shifting the Legal Risk and Use of “Clickwrap”
+
+Online sales transactions are ordinarily completed subject to terms and conditions that are presented to and agreed upon by the buyer prior to the tender of payment and completion of the transaction. One effective vehicle through which online merchants bind their consumers to such terms and conditions is a “clickwrap” agreement. A clickwrap agreement is presented to the individual, often as a pop-up on a web page, and prompts that individual to affirmatively indicate his or her acceptance of the terms and conditions. Absent the individual’s affirmation, he or she is not permitted to proceed further and complete the transaction.
+
+Clickwrap agreements are extremely useful, if not essential, for firearms sales. To the extent a seller wishes to establish a conditional sale model and set forth its terms, it may secure the buyer’s agreement to such terms through a clickwrap agreement. Not only can such an agreement serve to advise the prospective buyer of the atypical procedure, including the FFL’s involvement, but it can also serve to allocate some of the risk and costs involved in the transaction. For instance, a firearm seller may dictate which party – itself or the prospective buyer – will incur any shipping, insurance, and other such costs in the event that the conditional sale is not completed because the buyer was unable to satisfy the requirements necessary to take delivery. A clickwrap agreement may further establish return terms, warranty terms, and other standard terms of sale.
+
+It is important to note that not all risk and liability may be shifted to the prospective buyer. Under Connecticut law, for instance, anyone who “sells, delivers or otherwise transfers” a firearm to a person, knowing that person is prohibited from possessing the firearm, is strictly liable “for damages for the injury or death of another person” resulting from the use of the firearm by any person. Conn. Gen. Stat. § 52-571f. Also, under the laws of a handful of states, firearm dealers are specifically required to report the theft or loss of any firearms. Firearms sellers should review relevant laws in the states and localities into which they contemplate making online sales to determine whether a proposed risk and liability allocation is enforceable.
+
+
+Consideration of State and Local Laws
+
+In addition to the general principles discussed above, online firearms sellers should also keep in mind other state-specific requirements, particularly those that specifically affect the sale and shipment of firearms products and accessories. For example, Maryland law prohibits the possession of any magazine that holds more than 10 rounds. The penalty for non-compliance with such a law may be severe, and the shipment of a product to a buyer who cannot legally possess the product in his or her state or jurisdiction could implicate the seller. Similarly, over a dozen states expressly prohibit civilian ownership of silencers (or, more accurately, suppressors). California, Maryland, New Jersey, and the District of Columbia have laws limiting the frequency with which buyers may purchase firearms. Accordingly, an online seller may wish to restrict its sales to particular jurisdictions to avoid such risks.
+
+Failure to comply with state and local laws also implicates federal law and greatly increases a seller’s potential liability. For example, under 18 U.S.C. § 922(b)(2), “[i]t is unlawful for any licensed importer, licensed manufacturer, licensed dealer, or licensed collector to sell or deliver any firearm or ammunition to any person if the person’s purchase or possession would be in violation of any State law or local published ordinance applicable at the place of sale or delivery.” Moreover, a seller who fails to comply with state law could waive the protection provided by the Protection of Lawful Commerce in Arms Act (“PLCAA”), 15 U.S.C. §§ 7901-7903. Under this federal law, firearms sellers are absolutely insulated against civil liability for crimes committed with their products, unless certain specific and narrow exceptions apply. One crucial exception is when a seller “knowingly violated a State or Federal statute applicable to the sale or marketing of the product” and that violation was the proximate cause of a person’s injury. Thus, if a seller fails to follow state law, the protection of the PLCAA could be lost.
+
+Because online sellers have the potential to sell anywhere in the United States, compliance with state and local laws is a tough issue. The best practice is to plan ahead by determining the localities into which a seller will and will not deliver firearms and other products, determine whether special conditions should be placed on delivery to some locations, and tailor the terms and conditions of sale to match the seller’s policies.
+
+
+                    </p>
+                </div>
+            <button id="agreeButton" disabled>I Agree</button>
+            </div>
+        </div>
+
+        <script>
+        const tosCheckbox = document.getElementById('tos');
+        const submitButton = document.getElementById('submitButton');
+        const tosModal = document.getElementById('tosModal');
+        const showTosButton = document.getElementById('showTos');
+        const agreeButton = document.getElementById('agreeButton');
+        const tosContent = document.getElementById('tosContent');
+
+        // Open the modal
+        showTosButton.addEventListener('click', () => {
+        tosModal.style.display = 'flex';
+        });
+
+        // Enable "I Agree" button when scrolled to the bottom
+        tosContent.addEventListener('scroll', () => {
+        if (tosContent.scrollHeight - tosContent.scrollTop === tosContent.clientHeight) {
+            agreeButton.disabled = false;
+        }
+        });
+
+        // Agree to the terms
+        agreeButton.addEventListener('click', () => {
+        tosCheckbox.checked = true;
+        tosCheckbox.disabled = false;
+        submitButton.disabled = false;
+        tosModal.style.display = 'none';
+        });
+
+        // Close modal if clicked outside
+        window.addEventListener('click', (event) => {
+        if (event.target === tosModal) {
+            tosModal.style.display = 'none';
+        }
+        });
+        </script>
+    </div> 
 </body>
 </html>

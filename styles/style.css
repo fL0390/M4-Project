@@ -80,7 +80,7 @@ input[type="submit"] {
 .form {
   display: grid;
   gap: 14px;
-  transform: translateX(-300px);
+  transform: translateX(-400px);
 }
 
 .form input[type="password"],
@@ -116,6 +116,8 @@ input[type="submit"] {
   padding-inline: 20px;
 }
 
+
+
 .login input[type="password"],
 .login input[type="text"] {
   background-color: #3b4148;
@@ -129,6 +131,7 @@ input[type="submit"] {
 .login input[type="text"]:hover {
   background-color: #434a52;
 }
+
 
 .login input[type="submit"] {
   background-color: #5e5e5e;

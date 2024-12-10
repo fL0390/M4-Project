@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #232f3e; /* Fondo oscuro del header */
+    background-color: #32363b; /* Fondo oscuro del header */
     color: white;
 }
 
@@ -44,7 +44,7 @@ header {
 
 .search-bar button {
     padding: 10px 20px; /* Más espacio en botón de búsqueda */
-    background-color: #ffa41c;
+    background-color: #545a61;
     border: none;
     border-radius: 0 5px 5px 0;
     cursor: pointer;

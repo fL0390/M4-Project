@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -8,30 +7,33 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-image: url('https://i.imgur.com/cUHelzE.png');
+    background-repeat: repeat;
 }
 
 header {
-    background-color: #32363b; /* Fondo oscuro del header */
+    background-color: #32363b77;
     color: white;
 }
 
-/* Primera fila del header */
 .header-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 30px; /* Más espacio en los laterales y vertical */
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
 .logo img {
-    height: 40px;
+    height: 90px;
 }
 
 .search-bar {
     display: flex;
     align-items: center;
     flex-grow: 1;
-    margin: 0 400px; /* Espacio entre logo y carrito */
+    margin-left: 20px;
+    max-width: 600px;
 }
 
 .search-bar input {
@@ -40,16 +42,18 @@ header {
     font-size: 14px;
     border: none;
     border-radius: 5px 0 0 5px;
+    height: 40px;
 }
 
 .search-bar button {
-    padding: 10px 20px; /* Más espacio en botón de búsqueda */
+    padding: 10px 20px;
     background-color: #545a61;
     border: none;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     color: white;
-    font-size: 16px; /* Texto más grande */
+    font-size: 85%;
+    height: 40px;
 }
 
 .cart a {
@@ -57,27 +61,26 @@ header {
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
-    padding: 8px 15px; /* Espaciado interno para ajustar alineación */
+    padding: 8px 15px;
 }
 
-/* Segunda fila del header */
 .nav-menu {
-    background-color: #131a22; /* Fondo ligeramente más oscuro */
-    padding: 10px 30px; /* Más espacio para alineación */
+    padding: 10px;
 }
 
 .nav-menu ul {
     list-style: none;
     display: flex;
-    gap: 20px; /* Separación entre enlaces */
+    gap: 20px;
+    justify-content: center;
 }
 
 .nav-menu a {
     color: white;
     text-decoration: none;
     font-size: 14px;
-    padding: 5px 10px; /* Espaciado interno para clic más cómodo */
-    transition: background-color 0.3s; /* Efecto hover suave */
+    padding: 5px 10px;
+    transition: background-color 0.3s;
 }
 
 .nav-menu a:hover {
@@ -85,28 +88,29 @@ header {
     border-radius: 5px;
 }
 
-/* Banner */
 .banner {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    background-color: #f3f3f3;
-    padding: 60px 30px; /* Espaciado más amplio */
+    padding: 60px 30px;
+    gap: 20px;
 }
 
 .banner-content {
     max-width: 50%;
+    text-align: justify;
+    margin-right: 7%;
 }
 
 .banner-content h1 {
     color: #232f3e;
-    font-size: 36px; /* Título más grande */
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
 .banner-content p {
     color: #555;
-    margin-bottom: 30px; /* Separación más amplia entre texto y botón */
+    margin-bottom: 30px;
     font-size: 18px;
 }
 
@@ -114,7 +118,7 @@ header {
     background-color: #ffa41c;
     color: white;
     border: none;
-    padding: 15px 30px; /* Botón más amplio y cómodo */
+    padding: 15px 30px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
@@ -124,8 +128,33 @@ header {
     background-color: #cc8400;
 }
 
-.banner-image img {
-    max-width: 400px;
+.banner-image {
+    max-width: 100%;
     height: auto;
-    display: block;
+    flex: 1 1 auto;
+}
+
+
+.responsive-video {
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+    aspect-ratio: 16 / 9;
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .search-bar {
+        margin: 10px 0;
+        max-width: 100%;
+    }
+    .banner-content {
+        max-width: 100%;
+    }
+    .banner-content h1 {
+        font-size: 28px;
+    }
 }

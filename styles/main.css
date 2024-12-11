@@ -23,7 +23,9 @@ header {
     flex-wrap: wrap;
     padding: 10px;
 }
-
+.logo{
+    margin-right: 34%;
+}
 .logo img {
     height: 90px;
 }

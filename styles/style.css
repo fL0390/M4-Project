@@ -7,6 +7,8 @@
   inline-size: 90%;
   margin-inline: auto;
   max-inline-size: 320px;
+
+  height: 1024px;
 }
 
 .hidden {
@@ -41,8 +43,6 @@ html {
 }
 
 body {
-  background-image: url("../images/background.jpg");
-  background-size: cover;
   color: #606468;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -51,7 +51,11 @@ body {
   margin: 0;
   min-height: 100vh;
 }
-
+.login{
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  width: 100%;
+}
 a {
   color: #eee;
   text-decoration: none;
@@ -72,23 +76,19 @@ input {
   padding: 0;
   transition: background-color 0.3s;
 }
-
 input[type="submit"] {
   cursor: pointer;
 }
-
 .form {
-  display: grid;
+  display: inherit;
   gap: 14px;
   transform: translateX(-400px);
 }
-
 .form input[type="password"],
 .form input[type="text"],
 .form input[type="submit"] {
   inline-size: 100%;
 }
-
 .form__field {
   display: flex;
 }
@@ -143,4 +143,75 @@ input[type="submit"] {
 .login input[type="submit"]:focus,
 .login input[type="submit"]:hover {
   background-color: #9b9b9b;
+}
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 60px 30px;
+  gap: 20px;
+  background-color: rgb(37, 35, 35);
+}
+
+.banner-content {
+  max-width: 50%;
+  text-align: justify;
+  margin-right: 7%;
+}
+
+.banner-content h1 {
+  color: #747980;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.banner-content p {
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.banner-content button {
+  background-color: #ffa41c;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.banner-content button:hover {
+  background-color: #cc8400;
+}
+
+.banner-image {
+  max-width: 100%;
+  height: auto;
+  flex: 1 1 auto;
+}
+
+
+.responsive-video {
+  width: 100%;
+  height: auto;
+  max-width: 700px;
+  aspect-ratio: 16 / 9;
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+      flex-direction: column;
+      text-align: center;
+  }
+  .search-bar {
+      margin: 10px 0;
+      max-width: 100%;
+  }
+  .banner-content {
+      max-width: 100%;
+  }
+  .banner-content h1 {
+      font-size: 28px;
+  }
 }

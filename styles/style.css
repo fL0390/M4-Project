@@ -171,8 +171,8 @@ input[type="submit"] {
   font-size: 18px;
 }
 
-.banner-content button {
-  background-color: #ffa41c;
+.banner-content a {
+  background-color: #212120;
   color: white;
   border: none;
   padding: 15px 30px;
@@ -181,8 +181,8 @@ input[type="submit"] {
   border-radius: 5px;
 }
 
-.banner-content button:hover {
-  background-color: #cc8400;
+.banner-content a:hover {
+  background-color: #212124;
 }
 
 .banner-image {

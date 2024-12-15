@@ -7,7 +7,6 @@
   inline-size: 90%;
   margin-inline: auto;
   max-inline-size: 320px;
-
   height: 1024px;
 }
 
@@ -51,11 +50,18 @@ body {
   margin: 0;
   min-height: 100vh;
 }
-.login{
+
+.login {
   background-image: url("../images/background.jpg");
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1024px;
+  color: #eee;
   width: 100%;
 }
+
 a {
   color: #eee;
   text-decoration: none;
@@ -76,29 +82,35 @@ input {
   padding: 0;
   transition: background-color 0.3s;
 }
+
 input[type="submit"] {
   cursor: pointer;
 }
+
 .form {
-  display: inherit;
+  background-color: #3b4148;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
   gap: 14px;
   transform: translateX(-400px);
 }
+
 .form input[type="password"],
 .form input[type="text"],
 .form input[type="submit"] {
   inline-size: 100%;
 }
+
 .form__field {
   display: flex;
 }
 
 .form__input {
   flex: 1;
-}
-
-.login {
-  color: #eee;
 }
 
 .login label,
@@ -116,8 +128,6 @@ input[type="submit"] {
   padding-inline: 20px;
 }
 
-
-
 .login input[type="password"],
 .login input[type="text"] {
   background-color: #3b4148;
@@ -132,7 +142,6 @@ input[type="submit"] {
   background-color: #434a52;
 }
 
-
 .login input[type="submit"] {
   background-color: #5e5e5e;
   color: #eee;
@@ -144,6 +153,7 @@ input[type="submit"] {
 .login input[type="submit"]:hover {
   background-color: #9b9b9b;
 }
+
 .banner {
   display: flex;
   flex-wrap: wrap;
@@ -171,8 +181,8 @@ input[type="submit"] {
   font-size: 18px;
 }
 
-.banner-content a {
-  background-color: #212120;
+.banner-content button {
+  background-color: #ffa41c;
   color: white;
   border: none;
   padding: 15px 30px;
@@ -181,8 +191,8 @@ input[type="submit"] {
   border-radius: 5px;
 }
 
-.banner-content a:hover {
-  background-color: #212124;
+.banner-content button:hover {
+  background-color: #cc8400;
 }
 
 .banner-image {
@@ -190,7 +200,6 @@ input[type="submit"] {
   height: auto;
   flex: 1 1 auto;
 }
-
 
 .responsive-video {
   width: 100%;
@@ -201,67 +210,73 @@ input[type="submit"] {
 
 @media screen and (max-width: 768px) {
   .banner {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
   .search-bar {
-      margin: 10px 0;
-      max-width: 100%;
+    margin: 10px 0;
+    max-width: 100%;
   }
   .banner-content {
-      max-width: 100%;
+    max-width: 100%;
   }
   .banner-content h1 {
-      font-size: 28px;
+    font-size: 28px;
   }
 }
+
 .promo-container {
   background-color: #272726;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px; 
+  gap: 20px;
   padding: 2%;
   width: 100%;
   height: 100%;
 }
 
 .promo-content {
-  display: flex; 
-  justify-content: space-between; 
+  display: flex;
+  justify-content: space-between;
   gap: 15%;
-  width: 100%; 
+  width: 100%;
 }
 
 .promo {
+  position: relative;
   display: flex;
-  flex-direction: column; 
   color: black;
-  flex: 1; 
-  background-color:#9B9B9B; 
-  padding: 20px; 
-  text-align: center; 
-  border: 1px solid #686868; 
-  border-radius: 8px; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-  transition: transform 0.3s ease; 
+  flex: 1;
+  background-color: #9B9B9B;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #686868;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .promo:hover {
-  transform: translateY(-5px); 
+  transform: translateY(-5px);
 }
 
 .promo img {
-  max-width: 300px; 
-  max-height: 300px; 
-  object-fit: contain;
-  margin: 0 auto; 
+  margin-left: 50%;
+  width: 25%;
 }
 
-.promo h3 {
-  margin-bottom: 15px; 
-  margin-right: 0; 
+.promo legend {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #f4f4f4;
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .site-footer {
@@ -349,5 +364,3 @@ input[type="submit"] {
   font-size: 14px;
   color: #aaaaaa;
 }
-
-

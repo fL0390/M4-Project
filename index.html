@@ -8,35 +8,30 @@
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
 </head>
 <body class="align">
+  <body class="align">
     <section class="login">
+      <form action="./sites/main.html" method="POST" class="form">
+            <div class="form__field">
+                <label for="login__username">
+                    <svg class="icon"><use xlink:href="#icon-user"></use></svg>
+                    <span class="hidden">Username</span>
+                </label>
+                <input type="text" id="login__username" placeholder="Username" required>
+            </div>
 
-      <div class="grid">
-    
-        <form action="./sites/main.html" method="POST" class="form login">
-    
-          <div class="form__field" style="margin-top: 30%;">
-            <label for="login__username"><svg class="icon">
-                <use xlink:href="#icon-user"></use>
-              </svg><span class="hidden">Username</span></label>
-            <input autocomplete="username" id="login__username" type="text" name="username" class="form__input" placeholder="Username" required>
-          </div>
-    
-          <div class="form__field">
-            <label for="login__password"><svg class="icon">
-                <use xlink:href="#icon-lock"></use>
-              </svg><span class="hidden">Password</span></label>
-            <input id="login__password" type="password" name="password" class="form__input" placeholder="Password" required>
-          </div>
-    
-          <div class="form__field">
-            <input type="submit" value="Sign In">
-          </div>
+            <div class="form__field">
+                <label for="login__password">
+                    <svg class="icon"><use xlink:href="#icon-lock"></use></svg>
+                    <span class="hidden">Password</span>
+                </label>
+                <input type="password" id="login__password" placeholder="Password" required>
+            </div>
+
+            <div class="form__field">
+                <input type="submit" href="./sites/main.html" value="Sign In">
+            </div>
         </form>
-    
-      </div>
-    
     </section>
-    <div class="banner">
       <svg xmlns="http://www.w3.org/2000/svg" class="icons">
         <symbol id="icon-lock" viewBox="0 0 1792 1792">
           <path d="M640 768h512V576q0-106-75-181t-181-75-181 75-75 181v192zm832 96v576q0 40-28 68t-68 28H416q-40 0-68-28t-28-68V864q0-40 28-68t68-28h32V576q0-184 132-316t316-132 316 132 132 316v192h32q40 0 68 28t28 68z" />
@@ -47,39 +42,39 @@
       </svg>
     <section class="banner">
       <div class="banner-content">
-          <h1>The AK-47</h1>
-          <p>The AK-47, also known as the Kalashnikov, is one of the most iconic and influential firearms in history. Designed by Mikhail Kalashnikov in 1947, the rifle was built to be a rugged, reliable weapon that could withstand harsh conditions. It became the standard issue for the Soviet military and has since been used by armed forces, guerrilla groups, and civilians worldwide.</p>
-          <a href="./sites/main.html#category4">Take me there</a>
-      </div>
-      <div class="banner-image">
-          <iframe 
-              class="responsive-video" 
-              src="https://www.youtube.com/embed/SCmP6TpjK0o" 
-              title="YouTube video" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-          </iframe>
-      </div>        
+        <h1>The AK-47</h1>
+        <p>The AK-47, also known as the Kalashnikov, is one of the most iconic and influential firearms in history. Designed by Mikhail Kalashnikov in 1947, the rifle was built to be a rugged, reliable weapon that could withstand harsh conditions. It became the standard issue for the Soviet military and has since been used by armed forces, guerrilla groups, and civilians worldwide.</p>
+        <a href="./sites/main.html#category4">Take me there</a>
     </div>
+    <div class="banner-image">
+        <iframe 
+            class="responsive-video" 
+            src="https://www.youtube.com/embed/SCmP6TpjK0o" 
+            title="YouTube video" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    </section>
     <section class="promo-container" id="services">
       <div class="promo-content">
         <div class="promo">
-          <h3>Desert Eagle</h3>
+          <legend>Desert Eagle</legend>
           <img src="./images/guns/Deagle.webp" alt="Desert Eagle">
         </div>
         <div class="promo">
-          <h3>MP5</h3>
+          <legend>MP5</legend>
           <img src="./images/guns/MP5.webp" alt="MP5">
         </div>
       </div>
       <div class="promo-content">
         <div class="promo">
-          <h3>AK-47</h3>
+          <legend>AK-47</legend>
           <img src="./images/guns/AK47.png" alt="AK-47">
         </div>
         <div class="promo">
-          <h3>AWM</h3>
+          <legend>AWM</legend>
           <img src="./images/guns/AWM.png" alt="AWM">
         </div>
       </div>
@@ -104,7 +99,7 @@
         </div>
       </div>
       <div class="footer-bottom" id="we-are">
-        <p>&copy; 2024 - Made by Flavio & Pol</p>
+        <p>&copy; 2024 Smokin' Steel. All rights reserved.</p>
       </div>
     </footer>
   </body>

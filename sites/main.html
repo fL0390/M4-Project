@@ -5,46 +5,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smokin' Steel</title>
     <link rel="stylesheet" href="../styles/main.css">
+    <link id="favicon-light" rel="icon" href="../images/logo.png" media="(prefers-color-scheme: light)">
+    <link id="favicon-dark" rel="icon" href="../images/image-inverted.png" media="(prefers-color-scheme: dark)">
+
 </head>
 <body>
     <header>
         <div class="header-top">
             <div class="logo">
-                <img src="../images/logo.png" alt="Amazon Logo">
+                <a href="../index.html">
+                    <img src="../images/image-inverted.png" alt="Store Logo" style="max-width: 100px; height: auto;">
+                </a>
             </div>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Catalog</a></li>
-                    <li><a href="#">Our Best-Sellers</a></li>
-                    <li><a href="#">More Information</a></li>
-                </ul>
-            </nav>
+            
+            
             <div class="search-bar">
-                <input type="text" placeholder="Search for products">
-                <button>🔍</button>
+                <input type="text" placeholder="Search products...">
+                <button>Search</button>
             </div>
             <div class="cart">
-                <a href="#">Shopping Cart</a>
+                <span>🛒</span>
+                <span class="cart-counter">0</span>
             </div>
         </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#category1">Category 1</a></li>
+                <li><a href="#category2">Category 2</a></li>
+                <li><a href="#category3">Category 3</a></li>
+                <li><a href="#category4">Category 4</a></li>
+            </ul>
+        </nav>
     </header>
+
     <section class="banner">
         <div class="banner-content">
-            <h1>The AK-47</h1>
-            <p>The AK-47, also known as the Kalashnikov, is one of the most iconic and influential firearms in history. Designed by Mikhail Kalashnikov in 1947, the rifle was built to be a rugged, reliable weapon that could withstand harsh conditions. It became the standard issue for the Soviet military and has since been used by armed forces, guerrilla groups, and civilians worldwide.</p>
-            <button>Take me there</button>
+            <h1>Welcome to Smokin' Steel</h1>
+            <h2>Your one-stop shop for high quality weapons</h2>
+            <p>Discover our wide range of premium weapons</p>
         </div>
         <div class="banner-image">
-            <iframe 
-                class="responsive-video" 
-                src="https://www.youtube.com/embed/SCmP6TpjK0o" 
-                title="YouTube video" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
-        </div>        
+            <img src="../images/g28.webp" alt="Banner Image">
+        </div>
     </section>
+
+    <main>
+        <section id="category1">
+            <h2 class="categoryTitle">Pistols</h2>
+            <div class="products">
+                <a href="product.html">
+                    <div class="product">
+                        <img src="../images/product1.jpg" alt="Product 1">
+                        <p>Product 1 Description</p>
+                        <span>$19.99</span>
+                        <br>
+                        <br>
+                        <button class="add-cart">Add to Cart</button>
+                    </div>
+                </a>
+                    
+                <a href="product.html">
+                    <div class="product">
+                        <img src="../images/product1.jpg" alt="Product 1">
+                        <p>Product 1 Description</p>
+                        <span>$19.99</span>
+                        <br>
+                        <br>
+                        <button class="add-cart">Add to Cart</button>
+                    </div>
+                </a>
+                
+                <a href="product.html">
+                    <div class="product">
+                        <img src="../images/product1.jpg" alt="Product 1">
+                        <p>Product 1 Description</p>
+                        <span>$19.99</span>
+                        <br>
+                        <br>
+                        <button class="add-cart">Add to Cart</button>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="category2">
+            <h2 class="categoryTitle">Sub-Machine Guns</h2>
+            <div class="products">
+                <a href="product.html">
+                    <div class="product">
+                        <img src="../images/product1.jpg" alt="Product 1">
+                        <p>Product 1 Description</p>
+                        <span>$19.99</span>
+                        <br>
+                        <br>
+                        <button class="add-cart">Add to Cart</button>
+                    </div>
+                </a>
+                    
+                <a href="product.html">
+                    <div class="product">
+                        <img src="../images/product1.jpg" alt="Product 1">
+                        <p>Product 1 Description</p>
+                        <span>$19.99</span>
+                        <br>
+                        <br>
+                        <button class="add-cart">Add to Cart</button>
+                    </div>
+                </a>
+                
+                <a href="product.html">
+                    <div class="product">
+                        <img src="../images/product1.jpg" alt="Product 1">
+                        <p>Product 1 Description</p>
+                        <span>$19.99</span>
+                        <br>
+                        <br>
+                        <button class="add-cart">Add to Cart</button>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="category3">
+            <h2 class="categoryTitle">Rifles</h2>
+            <div class="products">
+                <a href="product.html">
+                    <div class="product">
+                        <img src="../images/product1.jpg" alt="Product 1">
+                        <p>Product 1 Description</p>
+                        <span>$19.99</span>
+                        <br>
+                        <br>
+                        <button class="add-cart">Add to Cart</button>
+                    </div>
+                </a>
+                    
+                <a href="product.html">
+                    <div class="product">
+                        <img src="../images/product1.jpg" alt="Product 1">
+                        <p>Product 1 Description</p>
+                        <span>$19.99</span>
+                        <br>
+                        <br>
+                        <button class="add-cart">Add to Cart</button>
+                    </div>
+                </a>
+                
+                <a href="product.html">
+                    <div class="product">
+                        <img src="../images/product1.jpg" alt="Product 1">
+                        <p>Product 1 Description</p>
+                        <span>$19.99</span>
+                        <br>
+                        <br>
+                        <button class="add-cart">Add to Cart</button>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="category4">
+            <h2 class="categoryTitle">Snipers</h2>
+            <div class="products">
+                <a href="product.html">
+                    <div class="product">
+                        <img src="../images/product1.jpg" alt="Product 1">
+                        <p>Product 1 Description</p>
+                        <span>$19.99</span>
+                        <br>
+                        <br>
+                        <button class="add-cart">Add to Cart</button>
+                    </div>
+                </a>
+                    
+                <a href="product.html">
+                    <div class="product">
+                        <img src="../images/product1.jpg" alt="Product 1">
+                        <p>Product 1 Description</p>
+                        <span>$19.99</span>
+                        <br>
+                        <br>
+                        <button class="add-cart">Add to Cart</button>
+                    </div>
+                </a>
+                
+                <a href="product.html">
+                    <div class="product">
+                        <img src="../images/product1.jpg" alt="Product 1">
+                        <p>Product 1 Description</p>
+                        <span>$19.99</span>
+                        <br>
+                        <br>
+                        <button class="add-cart">Add to Cart</button>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Smokin' Steel. All rights reserved.</p>
+    </footer>
 </body>
 </html>

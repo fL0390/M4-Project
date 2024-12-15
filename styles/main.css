@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #151514;
@@ -258,6 +262,11 @@ section {
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
 .add-cart {
     display: inline-block;
     padding: 10px 20px;
@@ -318,8 +327,9 @@ section {
 }
 
 .product img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
     margin-bottom: 10px;
 }
 

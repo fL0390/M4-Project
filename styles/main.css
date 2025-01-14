@@ -358,3 +358,7 @@ footer {
         pointer-events: none;
     }
 }
+
+.product {
+    transition: filter 0.3s ease;
+}

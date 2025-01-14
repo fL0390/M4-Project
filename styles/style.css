@@ -364,3 +364,15 @@ input[type="submit"] {
   font-size: 14px;
   color: #aaaaaa;
 }
+
+.incorrect {
+  color: red;
+  display: none;
+  animation: flashing 1s infinite;
+  text-align: center;
+}
+
+@keyframes flashing {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}

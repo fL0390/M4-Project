@@ -55,3 +55,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+const form = document.getElementById('login-form');
+        const errorMessage = document.getElementById('error-message');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita el envío del formulario por defecto
+
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            if (username === '' || password === '') {
+                errorMessage.style.display = 'block'; // Muestra el mensaje de error
+            } else {
+                errorMessage.style.display = 'none';
+                alert(`Welcome, ${username}!`); // Acción simulada
+                // Aquí puedes añadir lógica para enviar los datos al servidor
+            }
+        });

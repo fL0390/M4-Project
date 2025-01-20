@@ -11,3 +11,4 @@ document.querySelectorAll('.add-cart').forEach(button => {
     updateCartCounter();
   });
 });
+
